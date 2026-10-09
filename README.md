@@ -18,3 +18,9 @@ aplica as permissões por perfil e grava o `Audit_Log` no servidor.
 
 ## Estrutura
 `src/{config,context,hooks,services,utils,routes,components,pages}` conforme a especificação.
+
+## Publicar no GitHub Pages
+1. Repositório > Settings > Pages > Source: **GitHub Actions**.
+2. Settings > Secrets and variables > Actions > New repository secret: crie `VITE_FIREBASE_API_KEY`, `VITE_FIREBASE_AUTH_DOMAIN`, `VITE_FIREBASE_PROJECT_ID`, `VITE_FIREBASE_APP_ID`, `VITE_SHEETS_API_URL`.
+3. Firebase > Authentication > Settings > Authorized domains: adicionar `SEU-USUARIO.github.io`.
+4. Faça push na branch `main`; a aba Actions mostra o andamento e o site sobe sozinho.
